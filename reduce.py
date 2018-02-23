@@ -11,13 +11,11 @@ for line in sys.stdin:
     line = line.strip()
     city,date,mdc = line.split('\t')
     year = parser.parse(date).year
-    #print city,date,mdc
     if year not in data:
         data[year] = {}
     if city not in data[year]:
         data[year][city] = []
     data[year][city].append(float(mdc))
-#print data
 
 for year,value in data.iteritems():
     maximum = 0
