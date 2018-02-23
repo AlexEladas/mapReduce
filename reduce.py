@@ -28,4 +28,3 @@ for year,value in data.iteritems():
         median1 =  median(mdc)
         sdev = std(mdc)
         print '%s\t%s\t%s\t%s\t%s\t%s' % (year,city,maximum,minimum,median1,sdev)
-
