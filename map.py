@@ -16,5 +16,3 @@ with file as f:
 
 for city, date, mdc in zip(columns['Location/Emplacement'],columns['Collection Start/D\xe9but du pr\xe9l\xe8vement (UTC)'], columns['7Be MDC/7Be CMD (mBq/m3)']):
     print '%s\t%s\t%s' % (city,date,mdc)
-
-#Collection Start/Début du prélèvement (UTC)
